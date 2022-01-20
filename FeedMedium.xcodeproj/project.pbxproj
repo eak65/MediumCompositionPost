@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		296EE2B62799FE480005F20B /* FeedDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296EE2B52799FE480005F20B /* FeedDetailedViewController.swift */; };
+		296EE2B82799FE7D0005F20B /* FeedModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296EE2B72799FE7D0005F20B /* FeedModelView.swift */; };
+		296EE2BA279A04630005F20B /* FeedOldDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296EE2B9279A04630005F20B /* FeedOldDetailedViewController.swift */; };
+		296EE2BC279A10F00005F20B /* FeedComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296EE2BB279A10F00005F20B /* FeedComposer.swift */; };
 		29C63E2A2798DBD20065F1BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C63E292798DBD20065F1BA /* AppDelegate.swift */; };
 		29C63E2C2798DBD20065F1BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C63E2B2798DBD20065F1BA /* SceneDelegate.swift */; };
-		29C63E2E2798DBD20065F1BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C63E2D2798DBD20065F1BA /* ViewController.swift */; };
+		29C63E2E2798DBD20065F1BA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C63E2D2798DBD20065F1BA /* FeedViewController.swift */; };
 		29C63E312798DBD20065F1BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C63E2F2798DBD20065F1BA /* Main.storyboard */; };
 		29C63E332798DBD40065F1BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C63E322798DBD40065F1BA /* Assets.xcassets */; };
 		29C63E362798DBD40065F1BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C63E342798DBD40065F1BA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		296EE2B52799FE480005F20B /* FeedDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailedViewController.swift; sourceTree = "<group>"; };
+		296EE2B72799FE7D0005F20B /* FeedModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModelView.swift; sourceTree = "<group>"; };
+		296EE2B9279A04630005F20B /* FeedOldDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedOldDetailedViewController.swift; sourceTree = "<group>"; };
+		296EE2BB279A10F00005F20B /* FeedComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedComposer.swift; sourceTree = "<group>"; };
 		29C63E262798DBD20065F1BA /* FeedMedium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedMedium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C63E292798DBD20065F1BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29C63E2B2798DBD20065F1BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		29C63E2D2798DBD20065F1BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		29C63E2D2798DBD20065F1BA /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		29C63E302798DBD20065F1BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29C63E322798DBD40065F1BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29C63E352798DBD40065F1BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,11 +66,15 @@
 			children = (
 				29C63E292798DBD20065F1BA /* AppDelegate.swift */,
 				29C63E2B2798DBD20065F1BA /* SceneDelegate.swift */,
-				29C63E2D2798DBD20065F1BA /* ViewController.swift */,
+				29C63E2D2798DBD20065F1BA /* FeedViewController.swift */,
 				29C63E2F2798DBD20065F1BA /* Main.storyboard */,
 				29C63E322798DBD40065F1BA /* Assets.xcassets */,
 				29C63E342798DBD40065F1BA /* LaunchScreen.storyboard */,
 				29C63E372798DBD40065F1BA /* Info.plist */,
+				296EE2B52799FE480005F20B /* FeedDetailedViewController.swift */,
+				296EE2B72799FE7D0005F20B /* FeedModelView.swift */,
+				296EE2B9279A04630005F20B /* FeedOldDetailedViewController.swift */,
+				296EE2BB279A10F00005F20B /* FeedComposer.swift */,
 			);
 			path = FeedMedium;
 			sourceTree = "<group>";
@@ -138,8 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29C63E2E2798DBD20065F1BA /* ViewController.swift in Sources */,
+				296EE2B62799FE480005F20B /* FeedDetailedViewController.swift in Sources */,
+				296EE2BC279A10F00005F20B /* FeedComposer.swift in Sources */,
+				29C63E2E2798DBD20065F1BA /* FeedViewController.swift in Sources */,
+				296EE2BA279A04630005F20B /* FeedOldDetailedViewController.swift in Sources */,
 				29C63E2A2798DBD20065F1BA /* AppDelegate.swift in Sources */,
+				296EE2B82799FE7D0005F20B /* FeedModelView.swift in Sources */,
 				29C63E2C2798DBD20065F1BA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
