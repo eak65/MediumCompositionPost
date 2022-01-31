@@ -6,10 +6,12 @@
 //
 
 import UIKit
-
-class FeedDetailedViewController: UIViewController {
+protocol FeedDetailedView {
+    init(_ fm: FeedModelView)
+}
+class FeedDetailedViewController: UIViewController,FeedDetailedView {
     let feedModelView : FeedModelView
-    init(_ fm: FeedModelView) {
+    required init(_ fm: FeedModelView) {
         feedModelView = fm
         super.init()
     }

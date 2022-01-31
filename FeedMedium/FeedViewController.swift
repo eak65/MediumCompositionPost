@@ -10,12 +10,33 @@ class LoggingFrameWork {
     static func log(_ string:String) {
     }
 }
+class Crashlytics {
+    static func log(_ string:String) {
+        
+    }
+}
+protocol FeedView {
+    func display(_ models:[FeedModelView])
+}
 
-class FeedViewController: UITableViewController {
+class FeedViewController: UITableViewController, FeedView {
     var feedModelViews = [FeedModelView]()
+    
+    var didSelect : ((FeedModelView) -> ())?
+    var loadModels : ((Int,Int) -> ())?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        loadModels?(0,50)
+    }
+    func display(_ models: [FeedModelView]) {
+        DispatchQueue.main.async { [weak self] in
+            guard let strongSelf = self else {
+                return
+            }
+            strongSelf.feedModelViews = models
+            strongSelf.tableView.reloadData()
+        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -23,20 +44,8 @@ class FeedViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         let model = feedModelViews[indexPath.row]
-        if #available(iOS 9.0, *) {
-            
-            let detailedViewController = FeedDetailedViewController(model)
-            LoggingFrameWork.log("\(detailedViewController.self)")
-            self.navigationController?.pushViewController(detailedViewController, animated: true)
-            
-        } else {
-            
-            let feedOldDetailedViewController = FeedOldDetailedViewController(model)
-            LoggingFrameWork.log("\(feedOldDetailedViewController.self)")
-            self.navigationController?.pushViewController(feedOldDetailedViewController, animated: true)
-        }
+        didSelect?(model)
     }
 
 

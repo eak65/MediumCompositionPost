@@ -11,6 +11,10 @@
 		296EE2B82799FE7D0005F20B /* FeedModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296EE2B72799FE7D0005F20B /* FeedModelView.swift */; };
 		296EE2BA279A04630005F20B /* FeedOldDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296EE2B9279A04630005F20B /* FeedOldDetailedViewController.swift */; };
 		296EE2BC279A10F00005F20B /* FeedComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296EE2BB279A10F00005F20B /* FeedComposer.swift */; };
+		296EE2BE279A12520005F20B /* FeedNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296EE2BD279A12520005F20B /* FeedNavigation.swift */; };
+		296EE2C0279A1C5E0005F20B /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296EE2BF279A1C5E0005F20B /* Logging.swift */; };
+		296EE2C2279A23900005F20B /* NagivationComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296EE2C1279A23900005F20B /* NagivationComposer.swift */; };
+		296EE2C5279A32F10005F20B /* FeedApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296EE2C4279A32F10005F20B /* FeedApi.swift */; };
 		29C63E2A2798DBD20065F1BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C63E292798DBD20065F1BA /* AppDelegate.swift */; };
 		29C63E2C2798DBD20065F1BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C63E2B2798DBD20065F1BA /* SceneDelegate.swift */; };
 		29C63E2E2798DBD20065F1BA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C63E2D2798DBD20065F1BA /* FeedViewController.swift */; };
@@ -24,6 +28,10 @@
 		296EE2B72799FE7D0005F20B /* FeedModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModelView.swift; sourceTree = "<group>"; };
 		296EE2B9279A04630005F20B /* FeedOldDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedOldDetailedViewController.swift; sourceTree = "<group>"; };
 		296EE2BB279A10F00005F20B /* FeedComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedComposer.swift; sourceTree = "<group>"; };
+		296EE2BD279A12520005F20B /* FeedNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedNavigation.swift; sourceTree = "<group>"; };
+		296EE2BF279A1C5E0005F20B /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		296EE2C1279A23900005F20B /* NagivationComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NagivationComposer.swift; sourceTree = "<group>"; };
+		296EE2C4279A32F10005F20B /* FeedApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedApi.swift; sourceTree = "<group>"; };
 		29C63E262798DBD20065F1BA /* FeedMedium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedMedium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C63E292798DBD20065F1BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29C63E2B2798DBD20065F1BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		296EE2C3279A32DF0005F20B /* Netowrk */ = {
+			isa = PBXGroup;
+			children = (
+				296EE2C4279A32F10005F20B /* FeedApi.swift */,
+			);
+			path = Netowrk;
+			sourceTree = "<group>";
+		};
 		29C63E1D2798DBD20065F1BA = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +80,8 @@
 		29C63E282798DBD20065F1BA /* FeedMedium */ = {
 			isa = PBXGroup;
 			children = (
+				296EE2C3279A32DF0005F20B /* Netowrk */,
+				296EE2BD279A12520005F20B /* FeedNavigation.swift */,
 				29C63E292798DBD20065F1BA /* AppDelegate.swift */,
 				29C63E2B2798DBD20065F1BA /* SceneDelegate.swift */,
 				29C63E2D2798DBD20065F1BA /* FeedViewController.swift */,
@@ -75,6 +93,8 @@
 				296EE2B72799FE7D0005F20B /* FeedModelView.swift */,
 				296EE2B9279A04630005F20B /* FeedOldDetailedViewController.swift */,
 				296EE2BB279A10F00005F20B /* FeedComposer.swift */,
+				296EE2BF279A1C5E0005F20B /* Logging.swift */,
+				296EE2C1279A23900005F20B /* NagivationComposer.swift */,
 			);
 			path = FeedMedium;
 			sourceTree = "<group>";
@@ -153,9 +173,13 @@
 				296EE2B62799FE480005F20B /* FeedDetailedViewController.swift in Sources */,
 				296EE2BC279A10F00005F20B /* FeedComposer.swift in Sources */,
 				29C63E2E2798DBD20065F1BA /* FeedViewController.swift in Sources */,
+				296EE2C5279A32F10005F20B /* FeedApi.swift in Sources */,
+				296EE2C2279A23900005F20B /* NagivationComposer.swift in Sources */,
+				296EE2BE279A12520005F20B /* FeedNavigation.swift in Sources */,
 				296EE2BA279A04630005F20B /* FeedOldDetailedViewController.swift in Sources */,
 				29C63E2A2798DBD20065F1BA /* AppDelegate.swift in Sources */,
 				296EE2B82799FE7D0005F20B /* FeedModelView.swift in Sources */,
+				296EE2C0279A1C5E0005F20B /* Logging.swift in Sources */,
 				29C63E2C2798DBD20065F1BA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
